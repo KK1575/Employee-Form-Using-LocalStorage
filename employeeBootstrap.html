@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <style>
+  .container{
+  background-color:yellow;
+  }
+  hr{
+  height:10px;
+  background-color:purple;
+}
+  
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="employee.js"></script>
+</head>
+<body>
+<div class="container">
+ <form>
+ <fieldset>
+ <legend ><center><h2><b>Employee Details</b></h2></center></legend><br>
+ 
+ <div class="container-fluid">
+ <div class="row">
+ <label class="col-md-3 control-lable" style="font-size:20px;">Employee Name</label>  
+<div class="col-md-4 control-lable">
+      <input type="text" id="name" placeholder="Enter Your Name" class="form-control">
+        </div>
+		</div>
+ </div>
+ <div class="container-fluid">
+ <div class="row">
+ <br><label class="col-md-3 control-lable" style="font-size:20px;">E-mail</label>  
+<div class="col-md-4 control-lable">
+      <input type="text" id="email" placeholder="Enter Your E-mail" class="form-control">
+        </div>
+		</div>
+ </div>
+ <div class="container-fluid">
+ <div class="row">
+ <br><label class="col-md-3 control-lable" style="font-size:20px;">Mobile Number</label>  
+<div class="col-md-4 control-lable">
+      <input type="text" id="mobile" placeholder="Enter Your Mobile Number" class="form-control">
+        </div>
+		</div>
+ </div>
+ 
+ <div class="container-fluid">
+ <div class="row">
+ <br><label class="col-md-3 control-lable" style="font-size:20px;">Gender</label>  
+<div class="col-md-4 control-lable">
+      <select name="gender" id="gender" class="form-control">
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        
+                    </select>
+        </div>
+		</div>
+ </div>
+ <div class="container-fluid">
+ <div class="row">
+ <br><label class="col-md-3 control-lable" style="font-size:20px;">Country</label>  
+<div class="col-md-4 control-lable">
+      <input type="text" id="country" value="India" class="form-control"readonly>
+        </div>
+		</div>
+ </div>
+ <div class="container-fluid">
+ <div class="row">
+ <br><label class="col-md-3 control-lable" style="font-size:20px;">State</label>  
+<div class="col-md-4 control-lable">
+      <select name="state" id="state" onchange="Khushal()"class="form-control">
+                        <option value="1">Select State</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Madhyapradesh">Madhya Pradesh</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Uttarpradesh">Uttar Pradesh</option>
+                    </select>
+        </div>
+		</div>
+ </div>
+ <div class="container-fluid">
+ <div class="row">
+ <br><label class="col-md-3 control-lable" style="font-size:20px;">City</label>  
+<div class="col-md-4 control-lable">
+      <select name="city" id="city"class="form-control">
+                        <option value="1">Select City</option>
+                        <option id="c1"></option>
+                        <option id="c2"></option>
+                        <option id="c3"></option>
+                        <option id="c4"></option>
+                        <option id="c5"></option>
+                    </select>
+        </div>
+		</div>
+ </div>
+ <div class="container-fluid">
+ <div class="row">
+ <br><label class="col-md-3 control-lable" style="font-size:20px;">EmpCode</label>  
+<div class="col-md-4 control-lable">
+      <input type="text" name="emp" id="emp"  placeholder="Enter Your Address" class="form-control">
+        </div>
+		</div>
+ </div>
+ <div class="container-fluid">
+ <div class="row">
+ <br> 
+<div class="col-md-2 control-lable">
+      <input type="button" value="Submit"  onclick="KK()" class="form-control">
+        </div>
+		
+		</div>
+ </div>
+ <div class="container-fluid">
+        <center><span id="1"></span></center>
+		<center><span id="2"></span></center>
+		<center><span id="3"></span></center>
+		<center><span id="4"></span></center>
+		<center><span id="5"></span></center>
+		<center><span id="6"></span></center>
+		<center><span id="7"></span></center>
+		<center><span id="8"></span></center>
+		<center><span id="9"></span></center>
+		<center><span id="10"></span></center>
+</div>
+ </fieldset>
+</form> 
+
+<form>
+ <fieldset>
+ <legend ><center><h2><b>Employee Details</b></h2></center></legend><br>
+ 
+ <div class="container-fluid">
+ <div class="row">
+ <label class="col-md-3 control-lable" style="font-size:20px;">Employee Name</label>  
+<div class="col-md-4 control-lable">
+      <input type="text" id="name2" placeholder="Enter Your Name" class="form-control">
+        </div>
+		</div>
+ </div>
+ <div class="container-fluid">
+ <div class="row">
+ <br><label class="col-md-3 control-lable" style="font-size:20px;">E-mail</label>  
+<div class="col-md-4 control-lable">
+      <input type="text" id="email2" placeholder="Enter Your E-mail" class="form-control">
+        </div>
+		</div>
+ </div>
+ <div class="container-fluid">
+ <div class="row">
+ <br><label class="col-md-3 control-lable" style="font-size:20px;">Mobile Number</label>  
+<div class="col-md-4 control-lable">
+      <input type="text" id="mobile2" placeholder="Enter Your Mobile Number" class="form-control">
+        </div>
+		</div>
+ </div>
+ 
+ <div class="container-fluid">
+ <div class="row">
+ <br><label class="col-md-3 control-lable" style="font-size:20px;">Gender</label>  
+<div class="col-md-4 control-lable">
+      <select name="gender" id="gender2" class="form-control">
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        
+                    </select>
+        </div>
+		</div>
+ </div>
+ <div class="container-fluid">
+ <div class="row">
+ <br><label class="col-md-3 control-lable" style="font-size:20px;">Country</label>  
+<div class="col-md-4 control-lable">
+      <input type="text" id="country2" value="India" class="form-control"readonly>
+        </div>
+		</div>
+ </div>
+ <div class="container-fluid">
+ <div class="row">
+ <br><label class="col-md-3 control-lable" style="font-size:20px;">State</label>  
+<div class="col-md-4 control-lable">
+      <select name="state" id="state2" onchange="Khushall()"class="form-control">
+                        <option value="1">Select State</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Madhyapradesh">Madhya Pradesh</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Uttarpradesh">Uttar Pradesh</option>
+                    </select>
+        </div>
+		</div>
+ </div>
+ <div class="container-fluid">
+ <div class="row">
+ <br><label class="col-md-3 control-lable" style="font-size:20px;">City</label>  
+<div class="col-md-4 control-lable">
+      <select name="city" id="city2"class="form-control">
+                        <option value="">Select City</option>
+                        <option id="c11"></option>
+                        <option id="c21"></option>
+                        <option id="c31"></option>
+                        <option id="c41"></option>
+                        <option id="c51"></option>
+                    </select>
+        </div>
+		</div>
+ </div>
+ <div class="container-fluid">
+ <div class="row">
+ <br><label class="col-md-3 control-lable" style="font-size:20px;">EmpCode</label>  
+<div class="col-md-4 control-lable">
+      <input type="text" name="emp" id="emp2"  placeholder="Enter Your Address" class="form-control">
+        </div>
+		</div>
+ </div>
+ <div class="container-fluid">
+ <div class="row">
+ <br> 
+<div class="col-md-2 control-lable">
+      <input type="button"  value="Search" onclick="show()" class="form-control">
+        </div>
+		</div>
+ </div>
+ <hr/>
+ </fieldset>
+</form> 
+</div>
+</body>
+</html>
